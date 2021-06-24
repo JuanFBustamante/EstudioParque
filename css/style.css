@@ -107,7 +107,7 @@ p {
 }
 
 .hero__background {
-  background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg");
+  background-image: url("./img/actionvance-fIC7qz4HNqI-unsplash.jpg");
   background-attachment: fixed;
   display: flex;
   justify-content: center;
