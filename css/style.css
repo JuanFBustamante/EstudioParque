@@ -107,7 +107,7 @@ p {
 }
 
 .hero__background {
-  background-image: url("/img/inicio.jpg");
+  background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg");
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -118,7 +118,7 @@ p {
 }
 .hero__background:after {
   content: " ";
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   left: 0;
   top: 0;
