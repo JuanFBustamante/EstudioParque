@@ -1,0 +1,24 @@
+@import '../base/colors';
+
+@mixin text ($fFamily, $fSize, $fWeight, $align) {
+    font-size: $fSize;
+    font-weight: $fWeight;
+    text-align: $align;
+}
+
+@mixin flexbox($display, $f-direction) {
+    display: $display;
+    flex-direction: $f-direction;
+}
+
+
+
+@mixin bg-color($light-theme: true){
+    @if $light-theme {
+        background-color: map-get($colors, first);
+        color: #000;
+    } @else {
+        background-color: rgba(0, 0, 0, .04);
+        color: #000;
+    }
+}

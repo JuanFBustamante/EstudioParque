@@ -1,0 +1,578 @@
+/* Style Imports*/
+/*Globals*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  background-color: #f6f5f5;
+  color: #000;
+  font-size: 25px;
+  cursor: default;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #276678;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #276678;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bg-container {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #000;
+}
+
+.bg-alternative {
+  background-color: #1687a7;
+}
+
+/*Vars*/
+/*Var width/height*/
+/*position*/
+/*Colors*/
+/*Mixin*/
+/*Extend*/
+.hero__background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Header*/
+.nav__effects a {
+  transition: all 250ms;
+}
+.nav__effects a:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.nav__fontColor {
+  color: #f6f5f5 !important;
+}
+
+.nav__burgerStyle {
+  border: none !important;
+}
+
+.nav__burgerStyle:focus {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav__burgerStyle, .logo__style {
+    padding: 0 !important;
+  }
+}
+.nav__fontSize {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 4.2rem !important;
+}
+
+/*Hero*/
+.hero__container {
+  width: 100% !important;
+  height: 85vh !important;
+}
+
+.hero__background {
+  background-image: url("/img/inicio.jpg");
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  height: 100%;
+}
+.hero__background:after {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__content {
+  color: #f6f5f5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  padding: 3.4rem 0 0 0;
+}
+.hero__content h1 {
+  align-self: center;
+  padding-bottom: 2rem;
+  z-index: 1;
+}
+.hero__content button {
+  align-self: center;
+  z-index: 1;
+}
+
+.button {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: none;
+  text-transform: capitalize;
+  background-color: #d3e0ea;
+  border: 0 none;
+  border-radius: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 1px 4px 8px #276678;
+}
+.button a {
+  align-self: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #276678;
+}
+.button:hover {
+  opacity: 0.85;
+}
+.button:active {
+  transition: all 150ms linear;
+  opacity: 0.75;
+}
+.button:focus {
+  outline: 1px #959595;
+  outline-offset: -4px;
+}
+
+/* mobile */
+@media only screen and (max-width: 420px) {
+  .hero__background {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__content {
+    width: 70%;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .button {
+    padding: 0.4rem !important;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 568px) {
+  .hero__background {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__content h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .button {
+    padding: 0.4rem !important;
+  }
+}
+/*intermediate*/
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+  .hero__background {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero__content h1 {
+    font-size: 2.5rem;
+  }
+
+  .button {
+    padding: 0.4rem !important;
+  }
+}
+/*ourStudy*/
+.our__study h2 {
+  width: 75%;
+  font-weight: 800;
+  margin: 0 auto;
+  padding-bottom: 0.7rem;
+  text-align: left;
+}
+.our__study p {
+  width: 75%;
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: justify;
+}
+.our__study .new-button {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background-color: #1687a7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.4rem !important;
+}
+.our__study .new-button:hover {
+  color: #fff;
+  background-color: #276678;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.our__study .new-button a {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f6f5f5;
+  text-decoration: none !important;
+}
+
+.testimonio {
+  color: #f6f5f5;
+  width: 80%;
+  margin: 0 auto;
+}
+.testimonio img {
+  width: 3rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+.testimonio span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.testimonio footer {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.comentario img {
+  width: 1.5rem;
+  height: 1.3rem;
+  padding: 0;
+}
+
+/*Services*/
+.header__services {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.header__services h2 {
+  color: #276678;
+  margin: 0 auto;
+  position: absolute;
+  align-self: center;
+  z-index: 1;
+}
+
+.services {
+  width: 80%;
+  height: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+.services:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  z-index: 1;
+}
+.services img {
+  width: 20%;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+.services h4 {
+  padding-bottom: 0.4rem;
+  font-weight: 500;
+}
+.services p {
+  width: 90%;
+  height: 80%;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*About*/
+.header__about h2 {
+  padding: 0.8rem 0 0.4rem 0;
+}
+
+.p__about p {
+  width: 70%;
+  padding: 1rem 0 1.2rem 0;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.person__about {
+  width: auto;
+  text-align: center;
+}
+.person__about img {
+  width: 50%;
+  align-self: center;
+  padding: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #d3e0ea;
+}
+.person__about h5 {
+  font-size: 0.9rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+.person__about p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/*Newsletter*/
+.h2__newsletter {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.article h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.article p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+.article a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.reverse h4 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.news-aside {
+  height: 100%;
+  border: 1px solid #d3e0ea;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .news-aside {
+    display: none;
+  }
+}
+.twitter-api iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.news-sites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 1rem 0 0 0;
+  border-top: 3px solid #d3e0ea;
+  border-bottom: 3px solid #d3e0ea;
+}
+.news-sites h4 {
+  font-size: 1.1rem;
+  align-self: center;
+}
+.news-sites ul {
+  list-style: none;
+}
+.news-sites ul li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #276678;
+  transition: all 250ms;
+}
+.news-sites ul li a:hover {
+  font-weight: bolder;
+}
+
+/*Contact*/
+.contactForm {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contactForm input {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-size: 0.9rem;
+  margin: 0.2rem auto;
+  padding-left: 0.3rem;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  background: #d3e0ea;
+}
+.contactForm textarea {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 45%;
+  margin: 0.2rem auto;
+  padding-left: 0.3rem;
+  font-size: 0.9rem;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  background: #d3e0ea;
+}
+.contactForm button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  width: 20%;
+  margin: 0.3rem auto 0 auto;
+  background: #f6f5f5;
+}
+
+@media only screen and (max-width: 500px) {
+  button {
+    padding: 0 !important;
+  }
+}
+.contact-data {
+  margin: 0 auto;
+}
+.contact-data img {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0 0.2rem;
+}
+.contact-data p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .contact-data {
+    margin: 0 auto;
+  }
+}
+/*Footer*/
+.containerFooter {
+  background-color: #276678;
+}
+.containerFooter p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 0.7rem;
+  color: #d3e0ea;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-nav ul li {
+  width: auto;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #d3e0ea;
+  transition: all 250ms;
+}
+.footer-nav ul li a:hover {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 575px) {
+  .footer-nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

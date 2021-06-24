@@ -1,0 +1,40 @@
+@import '../base/colors';
+@import '../base/mixin';
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    // background-color: map-get($colors, first);
+    @include bg-color($light-theme: true);
+    font-size: 25px;
+    cursor: default;
+}
+//MIXIN
+
+h1{
+    @include text('Montserrat', 3rem, 600, center);
+}
+h2{
+    @include text('Montserrat', 2.3rem, 600, center);
+    color: map-get($colors, fourth);
+}
+h3{
+    @include text('Montserrat', 1.5rem, 600, center);
+    color: map-get($colors, fourth);
+}
+p{
+    @include text('Montserrat', 1rem, 400, center);
+}
+
+.bg-container{
+    @include bg-color($light-theme: false);
+}
+
+.bg-alternative{
+    background-color: map-get($colors, third);
+}

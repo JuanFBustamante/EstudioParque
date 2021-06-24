@@ -1,0 +1,30 @@
+.nav__effects a{
+    transition: all 250ms;
+    &:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+}
+.nav__fontColor{
+    color: map-get($colors, first)!important;
+}
+.nav__burgerStyle{
+    border: none!important;
+}
+.nav__burgerStyle:focus{
+    box-shadow: none!important;
+}
+@media only screen and (max-width: 500px) {
+    .nav__burgerStyle, .logo__style{
+        padding: 0!important;
+    }
+}
+.nav__fontSize{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.burger-menu{
+    @include flexbox(flex, column);
+    align-items: flex-end;
+    padding-right: 4.2rem!important;
+}

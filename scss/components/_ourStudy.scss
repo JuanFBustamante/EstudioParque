@@ -1,0 +1,69 @@
+// @import '../base/colors';
+// @import '../base/globals';
+
+.our__study{
+    h2{
+        width: 75%;
+        font-weight: 800;
+        margin: 0 auto;
+        padding-bottom: .7rem;
+        text-align: left;
+    }
+    p{
+        width: 75%;
+        font-size: .9rem;
+        font-weight: 200;
+        line-height: 1.5;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .new-button{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        background-color: map-get($colors, third);
+        border: none;
+        border-radius: 30px;
+        padding: .4rem!important;
+        &:hover{
+            color: #fff;
+            background-color: map-get($colors, fourth);
+            box-shadow:  0 6px 22px rgba(0,0,0,0.1);
+            transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+        }
+        a {
+                font-size: .8rem;
+                font-weight: 500;
+                color: map-get($colors, first);
+                text-decoration: none!important;
+        }
+    }
+}
+
+.testimonio{
+    color: map-get($colors, first);
+    width: $w100 - 20;
+    margin: 0 auto;
+    img{
+        width: 3rem;
+        height: 2.5rem;
+        padding: .5rem;
+    }
+    span{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    footer{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+.comentario{
+    img{
+        width: 1.5rem;
+        height: 1.3rem;
+        padding: 0;
+    }
+}

@@ -1,0 +1,49 @@
+
+.containerFooter{
+
+    background-color: map-get($colors, fourth);
+
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-size: .7rem;
+        color: map-get($colors, second);
+    }
+}
+// @media only screen and (max-width: 575px){
+//     .containerFooter{
+//         height: 25vh;
+//     }
+// }
+
+.footer-nav{
+    @include flexbox(flex, column);
+    text-align: center;
+    margin: 0 auto;
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            width: auto;
+            a{
+                text-decoration: none;
+                font-size: .8rem;
+                color: map-get($colors, second);
+                transition: all 250ms;
+                &:hover{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 575px){
+    .footer-nav{
+        display: none;
+    }
+}

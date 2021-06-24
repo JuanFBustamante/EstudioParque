@@ -1,0 +1,69 @@
+.contactForm{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;;
+    line-height: 1.5;
+    @include flexbox(flex, column);
+    justify-content: center;
+    
+    input{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        font-size: .9rem;
+        margin: .2rem auto;
+        padding-left: .3rem;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        background: map-get($colors, second);
+    }
+
+    textarea{
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        height: 45%;
+        margin: .2rem auto;
+        padding-left: .3rem;
+        font-size: .9rem;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;;
+        background: map-get($colors, second);
+    }
+
+    button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+        width: 20%;
+        margin: .3rem auto 0 auto;
+        // border: 1px solid gray;
+        // border-radius: 4px 4px 4px 4px;
+        // -webkit-border-radius: 4px 4px 4px 4px;
+        // -moz-border-radius: 4px 4px 4px 4px;
+        background: map-get($colors, first);
+    }
+}
+@media only screen and (max-width: 500px) {
+    button{
+        padding: 0!important;
+    }
+}
+
+.contact-data {
+    margin: 0 auto;
+    img{
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0 .2rem;
+    }
+    p{
+        font-size: .8rem;
+        // padding: 0 .3rem;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .contact-data{
+        margin: 0 auto;
+    }
+}
