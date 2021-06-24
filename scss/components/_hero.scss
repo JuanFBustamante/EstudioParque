@@ -4,7 +4,9 @@
 }
 
 .hero__background{
-    background-image: url("/img/inicio.jpg");
+    background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg");
+    //Photo by <a href="https://unsplash.com/@actionvance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ActionVance</a> on <a href="https://unsplash.com/s/photos/economy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
     @extend %background;
     background-attachment: fixed;
     display: flex;
