@@ -1,6 +1,6 @@
 # EstudioParque
 
-EN
+EN-
 Estudio Parque is a project aimed at the growth of an accounting and finance firm.
 Part of the firm's positioning in the local market is based on the development of a website to expand its brand.
 
@@ -12,7 +12,7 @@ Based on that I applied certain tools to achieve a better SEO.
 
 There are still some changes and improvements to be made to the content and design of the site but it will be ready soon.
 
-ES
+ES-
 Estudio Parque es un proyecto enfocado en el crecimiento de un estudio especializado en el area contable y financiera.
 Parte fundamental en el posicionamiento del Estudio en el ambito local es el desarrollo de un sitio web para dar a conocer su marca.
 
