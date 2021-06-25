@@ -4,7 +4,7 @@
 }
 
 .hero__background{
-    background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg");
+    background-image: url("/img/home-edit2.jpg");
     //Photo by <a href="http://unsplash.com/@actionvance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ActionVance</a> on <a href="http://unsplash.com/s/photos/economy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
     @extend %background;
@@ -18,7 +18,7 @@
 
     &:after{
         content: ' ';
-        background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(0, 0, 0, .3);
         position: $abs;
         left: 0;
         top: 0;
