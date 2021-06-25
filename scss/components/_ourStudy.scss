@@ -2,6 +2,11 @@
 // @import '../base/globals';
 
 .our__study{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-content: center;
+    margin: 0 auto;
     h2{
         width: 75%;
         font-weight: 800;
@@ -17,30 +22,38 @@
         margin: 0 auto;
         text-align: justify;
     }
-    .new-button{
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        background-color: map-get($colors, third);
-        border: none;
-        border-radius: 30px;
-        padding: .4rem!important;
-        &:hover{
-            color: #fff;
-            background-color: map-get($colors, fourth);
-            box-shadow:  0 6px 22px rgba(0,0,0,0.1);
-            transition: all .2s ease-in-out;
-            -moz-transition: all .2s ease-in-out;
-            -webkit-transition: all .2s ease-in-out;
-        }
-        a {
-                font-size: .8rem;
-                font-weight: 500;
-                color: map-get($colors, first);
-                text-decoration: none!important;
+    .new-button-container{
+        align-self: center;
+        // margin: auto;
+        .new-button{
+            width: auto;
+            height: auto;
+            
+            background-color: map-get($colors, third);
+            border: none;
+            border-radius: 30px;
+            padding: .4rem!important;
+            &:hover{
+                color: #fff;
+                background-color: map-get($colors, fourth);
+                box-shadow:  0 6px 22px rgba(0,0,0,0.1);
+                transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+            }
+            a {
+                    font-size: .8rem;
+                    font-weight: 500;
+                    color: map-get($colors, first);
+                    text-decoration: none!important;
+            }
         }
     }
+    
 }
+// @media only screen and (){
+    
+// }
 
 .testimonio{
     color: map-get($colors, first);

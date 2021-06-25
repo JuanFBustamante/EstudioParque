@@ -246,6 +246,12 @@ p {
   }
 }
 /*ourStudy*/
+.our__study {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
 .our__study h2 {
   width: 75%;
   font-weight: 800;
@@ -261,16 +267,18 @@ p {
   margin: 0 auto;
   text-align: justify;
 }
-.our__study .new-button {
+.our__study .new-button-container {
+  align-self: center;
+}
+.our__study .new-button-container .new-button {
   width: auto;
   height: auto;
-  margin: 0 auto;
   background-color: #1687a7;
   border: none;
   border-radius: 30px;
   padding: 0.4rem !important;
 }
-.our__study .new-button:hover {
+.our__study .new-button-container .new-button:hover {
   color: #fff;
   background-color: #276678;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
@@ -278,7 +286,7 @@ p {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
 }
-.our__study .new-button a {
+.our__study .new-button-container .new-button a {
   font-size: 0.8rem;
   font-weight: 500;
   color: #f6f5f5;
@@ -359,7 +367,7 @@ p {
 .services p {
   width: 90%;
   height: 80%;
-  text-align: left;
+  text-align: justify;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -409,6 +417,10 @@ p {
   padding: 30px 0;
 }
 
+.article {
+  display: flex;
+  flex-direction: column;
+}
 .article h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -416,10 +428,42 @@ p {
 .article p {
   font-size: 0.9rem;
   text-align: justify;
+  margin: 0;
 }
 .article a {
   font-size: 0.9rem;
   text-decoration: none;
+}
+.article .newsletter-news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article .newsletter-news .newsletter-button {
+  width: auto !important;
+  height: auto !important;
+  color: #fff;
+  background-color: #1687a7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.4rem !important;
+  font-size: 0.8rem !important;
+}
+.article .newsletter-news .newsletter-button:hover {
+  color: #ebe8e8;
+  background-color: #276678;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.article .newsletter-news .newsletter-button:focus {
+  box-shadow: none !important;
+}
+.article .newsletter-news .newsletter-button a {
+  font-weight: 500;
+  color: #f6f5f5;
+  text-decoration: none !important;
 }
 
 .reverse h4 {

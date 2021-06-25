@@ -5,6 +5,10 @@
 }
 
 .article{
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // align-content: center;
     h4{
         font-size: 1.1rem;
         font-weight: 600;
@@ -12,11 +16,47 @@
     p{
         font-size: .9rem;
         text-align: justify;
+        margin: 0;
     }
     a{
         font-size: .9rem;
         text-decoration: none;
     }
+    .newsletter-news{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .newsletter-button{
+            width: auto!important;
+            // justify-self: flex-end;
+            height: auto!important;
+            // margin: 0 auto;
+            color: #fff;
+            background-color: map-get($colors, third);
+            border: none;
+            border-radius: 30px;
+            padding: .4rem!important;
+            font-size: .8rem!important;
+            &:hover{
+                color: rgb(235, 232, 232);
+                background-color: map-get($colors, fourth);
+                box-shadow:  0 6px 22px rgba(0,0,0,0.1);
+                transition: all .2s ease-in-out;
+                -moz-transition: all .2s ease-in-out;
+                -webkit-transition: all .2s ease-in-out;
+            }
+            &:focus{
+                box-shadow: none!important;
+            }
+            a {
+                    // font-size: .1rem!important;
+                    font-weight: 500;
+                    color: map-get($colors, first);
+                    text-decoration: none!important;
+            }
+        }
+    }
+    
 }
 .reverse{
     h4{
