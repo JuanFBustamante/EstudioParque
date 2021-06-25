@@ -22,6 +22,7 @@
         font-size: .9rem;
         text-decoration: none;
     }
+    
     .newsletter-news{
         display: flex;
         flex-direction: column;
@@ -56,7 +57,14 @@
             }
         }
     }
-    
+}
+.middle-article{
+    // padding-top: 1rem;
+    border-top: 2px solid #d3e0ea;
+    border-bottom: 2px solid #d3e0ea;
+}
+.news-p{
+    background-color: map-get($colors, second);;
 }
 .reverse{
     h4{

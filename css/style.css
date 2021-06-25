@@ -466,6 +466,15 @@ p {
   text-decoration: none !important;
 }
 
+.middle-article {
+  border-top: 2px solid #d3e0ea;
+  border-bottom: 2px solid #d3e0ea;
+}
+
+.news-p {
+  background-color: #d3e0ea;
+}
+
 .reverse h4 {
   display: flex;
   flex-direction: row-reverse;
