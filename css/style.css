@@ -599,6 +599,14 @@ p {
   color: #d3e0ea;
 }
 
+@media only screen and (max-width: 575px) {
+  .containerFooter {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .footer-nav {
   display: flex;
   flex-direction: column;

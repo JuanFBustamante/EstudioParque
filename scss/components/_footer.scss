@@ -12,11 +12,14 @@
         color: map-get($colors, second);
     }
 }
-// @media only screen and (max-width: 575px){
-//     .containerFooter{
-//         height: 25vh;
-//     }
-// }
+@media only screen and (max-width: 575px){
+    .containerFooter{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 .footer-nav{
     @include flexbox(flex, column);
