@@ -1,12 +1,9 @@
 /* Style Imports*/
 /*Globals*/
-* {
+body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-
-body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
   background-color: #f6f5f5;
