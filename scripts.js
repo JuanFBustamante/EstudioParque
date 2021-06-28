@@ -14,6 +14,7 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "10.65vh";
   }
 }
+
 function scrollTo(){
   document.querySelectorAll(".scroll").forEach(t=>t.onclick=scrollAnchors)}
   function scrollAnchors(t,o=null){
