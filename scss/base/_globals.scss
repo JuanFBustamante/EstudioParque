@@ -1,12 +1,11 @@
 @import '../base/colors';
 @import '../base/mixin';
-*{
+
+
+body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-}
-
-body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     // background-color: map-get($colors, first);
