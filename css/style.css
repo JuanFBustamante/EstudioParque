@@ -542,6 +542,10 @@ p {
   -moz-border-radius: 4px 4px 4px 4px;
   background: #d3e0ea;
 }
+.contactForm label {
+  font-size: 0.9rem;
+  color: #276678;
+}
 .contactForm textarea {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -586,7 +590,7 @@ p {
 }
 /*Footer*/
 .containerFooter {
-  background-color: #276678;
+  background-color: #1687a7;
 }
 .containerFooter p {
   display: flex;

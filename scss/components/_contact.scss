@@ -17,7 +17,10 @@
         -moz-border-radius: 4px 4px 4px 4px;
         background: map-get($colors, second);
     }
-
+    label{
+        font-size: .9rem;
+        color: map-get($colors , fourth );
+    }
     textarea{
         font-family: 'Montserrat', sans-serif;
         width: 100%;
