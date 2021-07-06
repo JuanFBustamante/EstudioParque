@@ -32,6 +32,8 @@
                 font-size: .8rem;
                 color: map-get($colors, second);
                 transition: all 250ms;
+                -moz-transition: all 250ms;
+                -webkit-transition: all 250ms;
                 &:hover{
                     font-weight: bolder;
                 }

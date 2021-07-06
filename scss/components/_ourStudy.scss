@@ -27,6 +27,8 @@
             background-color: map-get($colors, third);
             border: none;
             border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
             padding: .4rem!important;
             &:hover{
                 color: #fff;
@@ -47,9 +49,12 @@
     
 }
 
+
+
 .testimonio{
     color: map-get($colors, first);
-    width: $w100 - 20;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     img{
         width: 3rem;
@@ -65,10 +70,38 @@
         font-weight: 700;
     }
 }
-.comentario{
-    img{
-        width: 1.5rem;
-        height: 1.3rem;
-        padding: 0;
+@media only screen and (max-width: 499px){
+    .blockquote-container{
+        blockquote{
+            height: 43vh;
+        }
+    }
+}
+@media only screen and (min-width:500px) and (max-width: 767px){
+    .blockquote-container{
+        blockquote{
+            height: 35vh;
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 990px){
+    .blockquote-container{
+        blockquote{
+            height: 55vh;
+        }
+    }
+}
+@media only screen and (min-width:991px) and (max-width: 1280px){
+    .blockquote-container{
+        blockquote{
+            height: 40vh;
+        }
+    }
+}
+@media only screen and (min-width: 1281px){
+    .blockquote-container{
+        blockquote{
+            height: 20vh;
+        }
     }
 }

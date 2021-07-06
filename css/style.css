@@ -5,7 +5,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
-  width: 100%;
+  width: 100% !important;
   background-color: #f6f5f5;
   color: #000;
   font-size: 25px;
@@ -273,6 +273,8 @@ p {
   background-color: #1687a7;
   border: none;
   border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   padding: 0.4rem !important;
 }
 .our__study .new-button-container .new-button:hover {
@@ -293,6 +295,7 @@ p {
 .testimonio {
   color: #f6f5f5;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
 }
 .testimonio img {
@@ -309,12 +312,31 @@ p {
   font-weight: 700;
 }
 
-.comentario img {
-  width: 1.5rem;
-  height: 1.3rem;
-  padding: 0;
+@media only screen and (max-width: 499px) {
+  .blockquote-container blockquote {
+    height: 43vh;
+  }
 }
-
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .blockquote-container blockquote {
+    height: 35vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .blockquote-container blockquote {
+    height: 55vh;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+  .blockquote-container blockquote {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .blockquote-container blockquote {
+    height: 20vh;
+  }
+}
 /*Services*/
 .header__services {
   width: 100%;
@@ -516,6 +538,8 @@ p {
   font-size: 0.8rem;
   color: #276678;
   transition: all 250ms;
+  -moz-transition: all 250ms;
+  -webkit-transition: all 250ms;
 }
 .news-sites ul li a:hover {
   font-weight: bolder;
@@ -626,6 +650,8 @@ p {
   font-size: 0.8rem;
   color: #d3e0ea;
   transition: all 250ms;
+  -moz-transition: all 250ms;
+  -webkit-transition: all 250ms;
 }
 .footer-nav ul li a:hover {
   font-weight: bolder;

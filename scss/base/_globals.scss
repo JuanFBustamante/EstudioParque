@@ -7,7 +7,7 @@ body{
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
+    width: 100%!important;
     // background-color: map-get($colors, first);
     @include bg-color($light-theme: true);
     font-size: 25px;
