@@ -61,18 +61,25 @@
         height: 2.5rem;
         padding: .5rem;
     }
-    span{
-        font-size: 1.5rem;
-        font-weight: 700;
+    .comentario{
+        .p-testimonio{
+            font-size: 1.1rem;
+        }
+        footer{
+            font-size: 1rem;
+            font-weight: 700;
+        }
     }
-    footer{
-        font-size: 1rem;
-        font-weight: 700;
-    }
+
+    
 }
+
 
 @media only screen and (max-width:480px){
     .blockquote-container{
+        .testimonio{
+            width: 95%;
+        }
         blockquote{
             height: 288px;
         }
@@ -100,6 +107,9 @@
     }
 }
 @media only screen and (min-width:991px) and (max-width: 1280px){
+    .testimonio{
+        width: 75%;
+    }
     .blockquote-container{
         blockquote{
             height: 240px;
@@ -107,6 +117,9 @@
     }
 }
 @media only screen and (min-width: 1281px){
+    .testimonio{
+        width: 75%;
+    }
     .blockquote-container{
         blockquote{
             height: 120px;

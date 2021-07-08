@@ -54,9 +54,12 @@ p {
 /*Mixin*/
 /*Extend*/
 .hero__background {
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /*Header*/
@@ -101,14 +104,13 @@ p {
 .hero__container {
   width: 100% !important;
   height: 85vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__background {
   background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg");
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 100%;
   position: relative;
   height: 100%;
@@ -123,6 +125,11 @@ p {
   height: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero__background {
+    background-attachment: fixed;
+  }
+}
 .hero__content {
   color: #f6f5f5;
   width: 100%;
@@ -303,16 +310,18 @@ p {
   height: 2.5rem;
   padding: 0.5rem;
 }
-.testimonio span {
-  font-size: 1.5rem;
-  font-weight: 700;
+.testimonio .comentario .p-testimonio {
+  font-size: 1.1rem;
 }
-.testimonio footer {
+.testimonio .comentario footer {
   font-size: 1rem;
   font-weight: 700;
 }
 
 @media only screen and (max-width: 480px) {
+  .blockquote-container .testimonio {
+    width: 95%;
+  }
   .blockquote-container blockquote {
     height: 288px;
   }
@@ -333,11 +342,19 @@ p {
   }
 }
 @media only screen and (min-width: 991px) and (max-width: 1280px) {
+  .testimonio {
+    width: 75%;
+  }
+
   .blockquote-container blockquote {
     height: 240px;
   }
 }
 @media only screen and (min-width: 1281px) {
+  .testimonio {
+    width: 75%;
+  }
+
   .blockquote-container blockquote {
     height: 120px;
   }
