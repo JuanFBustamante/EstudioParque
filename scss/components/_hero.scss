@@ -7,7 +7,7 @@
 }
 
 .hero__background{
-    background-image: url("/img/actionvance-fIC7qz4HNqI-unsplash.jpg") ;
+    background-image: url("/img/ECP-background.jpg") ;
     @extend %background;
     
     // display: flex;
@@ -19,7 +19,7 @@
 
     &:after{
         content: ' ';
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .7);
         position: $abs;
         left: 0;
         top: 0;
@@ -72,7 +72,7 @@
     text-transform: none;
     text-transform: capitalize;
     
-    background-color: map-get($colors, second);
+    background-color: map-get($colors, third);
     border: 0 none;
     border-radius: 1.5rem;
     
@@ -89,10 +89,30 @@
         align-self: center;
         text-decoration: none;
         font-size: .9rem;
-        color: map-get($colors, fourth);
+        color: map-get($colors, first);
     }
+    // &:hover{
+                
+    //     background-color: map-get($colors, second);
+    //     border: 1px solid rgba(0,0,0,0.4);
+    //     box-shadow:  0 6px 22px rgba(0,0,0,0.1);
+    //     transition: all .2s ease-in-out;
+    //     -moz-transition: all .2s ease-in-out;
+    //     -webkit-transition: all .2s ease-in-out;
+    //     a{
+    //         color: map-get($colors, third);
+    //     }
+    // }
     &:hover{
-        opacity: .85
+        background-color: map-get($colors, second);
+        // border: 1px solid rgba(0,0,0,0.4);
+        opacity: .85;
+        transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        a{
+             color: map-get($colors, third);
+        }
     }
     &:active{
         transition: all 150ms linear;

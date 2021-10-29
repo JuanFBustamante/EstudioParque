@@ -31,12 +31,16 @@
             -moz-border-radius: 30px;
             padding: .4rem!important;
             &:hover{
-                color: #fff;
-                background-color: map-get($colors, fourth);
+                
+                background-color: map-get($colors, second);
+                border: 1px solid rgba(0,0,0,0.4);
                 box-shadow:  0 6px 22px rgba(0,0,0,0.1);
                 transition: all .2s ease-in-out;
                 -moz-transition: all .2s ease-in-out;
                 -webkit-transition: all .2s ease-in-out;
+                a{
+                    color: map-get($colors, third);
+                }
             }
             a {
                     font-size: .8rem;
