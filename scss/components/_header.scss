@@ -1,3 +1,19 @@
+.nav__content{
+    width: 100%;
+    .logo__style{
+        width: 20%;
+        font-size: 1.5rem;
+            color: map-get($colors , first);
+            transition: all 250ms;
+        &:hover{
+            color: map-get($colors , first);
+        }
+    }
+    div{
+        width: 60%;
+    }
+}
+
 .nav__effects a{
     transition: all 250ms;
     &:hover{
@@ -5,6 +21,7 @@
         z-index: 1;
     }
 }
+
 .nav__fontColor{
     color: map-get($colors, first)!important;
 }

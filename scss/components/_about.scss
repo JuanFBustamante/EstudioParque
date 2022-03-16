@@ -26,7 +26,7 @@
     text-align: center;
 
     img{
-        width: 50%;
+        width: 75%;
         align-self: center;
         padding: 0;
         border-radius: 5px;
@@ -34,15 +34,28 @@
         -moz-border-radius: 5px;
         border: 1px solid #d3e0ea;
     }
-    h5{
-        font-size: .9rem;
-        margin: 0 auto;
-        padding: .5rem 0;
+    .person__about_content{
+    
+        h5{
+            font-size: .9rem;
+            margin: 0 auto;
+            padding: .5rem 0;
+        }
+        p{
+            width: 60%;
+            margin: 0 auto;
+            font-size: .7rem;
+            text-align: center;
+        }
+        a{
+            img{
+                width: 2rem;
+                height: 1.5rem;
+                padding: 0 .2rem;
+                border: none;
+            }
+        }
+
     }
-    p{
-        width: 50%;
-        margin: 0 auto;
-        font-size: .7rem;
-        text-align: center;
-    }
+
 }

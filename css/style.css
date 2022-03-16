@@ -44,7 +44,7 @@ p {
 }
 
 .bg-alternative {
-  background-color: #c74f09;
+  background-color: #C3B091;
 }
 
 /*Vars*/
@@ -63,6 +63,22 @@ p {
 }
 
 /*Header*/
+.nav__content {
+  width: 100%;
+}
+.nav__content .logo__style {
+  width: 20%;
+  font-size: 1.5rem;
+  color: #f6f5f5;
+  transition: all 250ms;
+}
+.nav__content .logo__style:hover {
+  color: #f6f5f5;
+}
+.nav__content div {
+  width: 60%;
+}
+
 .nav__effects a {
   transition: all 250ms;
 }
@@ -110,7 +126,6 @@ p {
 }
 
 .hero__background {
-  background-image: url("/img/ECP-background.jpg");
   max-width: 100%;
   position: relative;
   height: 100%;
@@ -164,7 +179,7 @@ p {
   white-space: nowrap;
   text-transform: none;
   text-transform: capitalize;
-  background-color: #c74f09;
+  background-color: #C3B091;
   border: 0 none;
   border-radius: 1.5rem;
   font-family: "Montserrat", sans-serif;
@@ -189,7 +204,7 @@ p {
   -webkit-transition: all 0.4s ease-in-out;
 }
 .button:hover a {
-  color: #c74f09;
+  color: #C3B091;
 }
 .button:active {
   transition: all 150ms linear;
@@ -284,7 +299,7 @@ p {
 .our__study .new-button-container .new-button {
   width: auto;
   height: auto;
-  background-color: #c74f09;
+  background-color: #C3B091;
   border: none;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -300,7 +315,7 @@ p {
   -webkit-transition: all 0.2s ease-in-out;
 }
 .our__study .new-button-container .new-button:hover a {
-  color: #c74f09;
+  color: #C3B091;
 }
 .our__study .new-button-container .new-button a {
   font-size: 0.8rem;
@@ -416,9 +431,9 @@ p {
   font-weight: 500;
 }
 .services p {
-  width: 90%;
+  width: 80%;
   height: 80%;
-  text-align: justify;
+  text-align: left;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -451,7 +466,7 @@ p {
   text-align: center;
 }
 .person__about img {
-  width: 50%;
+  width: 75%;
   align-self: center;
   padding: 0;
   border-radius: 5px;
@@ -459,16 +474,22 @@ p {
   -moz-border-radius: 5px;
   border: 1px solid #d3e0ea;
 }
-.person__about h5 {
+.person__about .person__about_content h5 {
   font-size: 0.9rem;
   margin: 0 auto;
   padding: 0.5rem 0;
 }
-.person__about p {
-  width: 50%;
+.person__about .person__about_content p {
+  width: 60%;
   margin: 0 auto;
   font-size: 0.7rem;
   text-align: center;
+}
+.person__about .person__about_content a img {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 0 0.2rem;
+  border: none;
 }
 
 /*Newsletter*/
@@ -512,7 +533,7 @@ p {
 }
 .article .newsletter-news .newsletter-button:hover {
   color: #ebe8e8;
-  background-color: #c74f09;
+  background-color: #C3B091;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -661,7 +682,7 @@ p {
 
 /*Footer*/
 .containerFooter {
-  background-color: #c74f09;
+  background-color: #C3B091;
 }
 .containerFooter p {
   display: flex;
